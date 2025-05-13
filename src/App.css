@@ -174,3 +174,423 @@ img { vertical-align: middle; }
     font-size: 14px;
   }
 }
+
+
+
+.exam-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 40px;
+  gap: 40px;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  color: #113d6b;
+}
+
+.exam-intro {
+  flex: 1 1 250px;
+  border-right: 1px solid #ddd;
+  padding-right: 30px;
+}
+
+.exam-intro h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.exam-intro p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.exam-list {
+  flex: 3 1 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.exam-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.calendar-icon {
+  font-size: 30px;
+  margin-top: 4px;
+}
+
+.exam-item strong {
+  color: #113d6b;
+  font-size: 15px;
+}
+
+.exam-item p {
+  color: #666;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .exam-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .exam-intro {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+
+  .exam-list {
+    flex-direction: column;
+  }
+
+  .exam-item {
+    max-width: 100%;
+  }
+}
+
+.info-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.info-card {
+  background-color: #113d6b;
+  color: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 300px;
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png"); /* Optional pattern */
+  background-size: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.info-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .info-card {
+    width: 100%;
+  }
+}
+
+
+.stats-section {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.stat-box {
+  background: transparent;
+  flex: 1 1 calc(25% - 20px);
+  min-width: 260px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #0a2e5c;
+}
+
+.stat-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.stat-description {
+  font-size: 14px;
+  color: #2f4c6c;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stat-box {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .stat-box {
+    flex: 1 1 100%;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+}
+
+
+
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0a2e5c;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question span {
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.faq-question span.active {
+  color: #0a2e5c;
+  font-weight: bold;
+}
+
+.icon .icon-circle {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #0a2e5c;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 22px;
+  color: #0a2e5c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 12px 0 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .faq-question span {
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+
+
+.footer-wrapper {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* ====== Subscribe Section ====== */
+.subscribe-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  color: #0d326e;
+}
+
+.subscribe-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subscribe-content p {
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  max-width: 500px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+}
+
+.subscribe-form button {
+  background: #0d326e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.subscribe-image img {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ====== Footer ====== */
+.footer {
+  background-color: #002a5c;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-column p,
+.footer-column li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.social-icons span {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .subscribe-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  .subscribe-form button {
+    margin-top: 10px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+
+
+
+
