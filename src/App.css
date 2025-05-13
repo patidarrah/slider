@@ -79,3 +79,67 @@ img { vertical-align: middle; }
 @media only screen and (max-width: 300px) {
   .prev, .next, .text { font-size: 11px; }
 }
+
+
+/* Navbar.css */
+
+.navbar {
+  background-color: #113d6b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.navbar__logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu li {
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+}
+
+.navbar__menu li::after {
+  content: "▾";
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar__search {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar__enrolment {
+  background-color: white;
+  color: #113d6b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__enrolment:hover {
+  background-color: #e0e0e0;
+}
